@@ -40,17 +40,6 @@ nav li a:hover {
   background-color: #b28bbb;
 }
 
-/* CENTER LOGO (YOUR CSS, NOW APPLIES) */
-.navbar-left {
-  display: flex;
-  justify-content: center;
-  margin: 20px 0;
-}
-
-.navbar-left img {
-  height: 35px;
-}
-
 /* SECTIONS */
 section {
   background: #ffffffcc;
@@ -117,4 +106,13 @@ footer {
   text-align: center;
   margin-top: 40px;
   opacity: 0.8;
+}
+
+.navbar-left {
+  display: flex;
+  justify-content: center; /* center horizontally */
+}
+
+.navbar-left img {
+  height: 35px;
 }
