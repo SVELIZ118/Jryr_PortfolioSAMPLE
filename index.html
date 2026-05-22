@@ -17,9 +17,11 @@
       scroll-behavior:smooth;
     }
 
+    /* BODY */
+
     body{
       font-family:'Poppins', sans-serif;
-      background:#f4f4f4;
+      background:#e9d5ff;
       color:#333;
       line-height:1.6;
     }
@@ -27,7 +29,7 @@
     /* NAVBAR */
 
     nav{
-      background:#222;
+      background:#b57edc;
       padding:15px;
       position:sticky;
       top:0;
@@ -49,7 +51,7 @@
     }
 
     nav a:hover{
-      color:#ffb6c1;
+      color:#ffe4fa;
     }
 
     /* HERO SECTION */
@@ -57,23 +59,32 @@
     .hero{
       text-align:center;
       padding:60px 20px;
-      background:linear-gradient(to right, #ffd6e0, #ffeef2);
-    }
-
-    .hero img{
-      width:180px;
-      margin-top:20px;
+      background:linear-gradient(to right, #c084fc, #e9d5ff);
     }
 
     .hero h1{
       font-size:2.5rem;
       margin-bottom:10px;
+      color:white;
     }
 
     .divider{
       margin:20px 0;
       font-weight:bold;
-      color:#555;
+      color:white;
+    }
+
+    /* ROUND CENTER IMAGE */
+
+    .hero img{
+      width:220px;
+      height:220px;
+      object-fit:cover;
+      border-radius:50%;
+      display:block;
+      margin:20px auto;
+      border:5px solid white;
+      box-shadow:0 4px 10px rgba(0,0,0,0.2);
     }
 
     /* SECTIONS */
@@ -87,7 +98,7 @@
     h2{
       text-align:center;
       margin-bottom:25px;
-      color:#222;
+      color:#6b21a8;
     }
 
     /* ABOUT */
@@ -98,8 +109,11 @@
 
     .selfpic{
       width:220px;
-      border-radius:15px;
+      height:220px;
+      object-fit:cover;
+      border-radius:50%;
       margin-top:20px;
+      border:5px solid white;
       box-shadow:0 4px 10px rgba(0,0,0,0.2);
     }
 
@@ -142,7 +156,7 @@
     }
 
     .resources a{
-      color:#ff4f87;
+      color:#9333ea;
       text-decoration:none;
       font-weight:bold;
     }
@@ -160,7 +174,7 @@
     /* FOOTER */
 
     footer{
-      background:#cfaae3;
+      background:#b57edc;
       color:white;
       text-align:center;
       padding:20px;
@@ -179,6 +193,12 @@
 
       .hero h1{
         font-size:2rem;
+      }
+
+      .hero img,
+      .selfpic{
+        width:170px;
+        height:170px;
       }
     }
 
@@ -202,11 +222,13 @@
   <!-- HERO -->
 
   <section class="hero" id="home">
+
     <h1>Welcome To My Junior Year Portfolio!</h1>
 
     <p class="divider">● ○ ● ○ Stephanie Veliz ○ ● ○ ●</p>
 
     <img src="Myself.png" alt="Portfolio Logo">
+
   </section>
 
   <!-- ABOUT -->
