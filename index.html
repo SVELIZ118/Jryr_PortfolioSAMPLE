@@ -1,136 +1,335 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    
-    <meta charset="UTF-8">
-    <title>Junior Year Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <!-- Font From Google -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&amp;display=swap" rel="stylesheet">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stephanie Veliz Portfolio</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-    <!-- NAVIGATION BAR -->
-    <main id="home">
-    <nav>
-      <ul>
-        <li><a class="active" href="#home">Home</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#projects">CFU's</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <div class="navbar-left"></div> 
-      </ul>
-    </nav>
-    
-    <!-- HOME -->
-      <div class="divider">● ○ ● ○ Welcome To My Junior Year Portfolio! ● ○ ● ○</div>
-      
-      <img src="Tuxcat.png" alt="Logo">
-      
-      <!-- ABOUT ME -->
-      <section id="about">
-        <h2>About Me:</h2>
-        <p>
-          Hi! My name is <strong>Stephanie Veliz</strong>, and I’m in 11th grade.
-          I enjoy learning new coding skills and im ingtrugued to continue learning more about HTML & CSS.
-        </p>
-        <img class="selfpic" src="myself1.png" alt="Photo of Stephanie Veliz">
-      </section>
+  <style>
 
-      <!-- PROJECTS -->
-      <section id="projects">
-        <h2 class="divider">● ○ ● ○ ○ ○ ● ○ ●PROJECTS● ○ ● ○ ○ ○ ● ○ ●</h2>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      scroll-behavior:smooth;
+    }
 
-        <div class="project-grid">
-          <div class="project">
-            <p><b>CFU 1</b></p>
-            <img src="CFU1.png" alt="Project 1">
-            <p>This was the very first CFU assigned, as we followed along with the teacher we wereable to explore and dive deeper to how PYTHON works!</p>
-          </div>
+    body{
+      font-family:'Poppins', sans-serif;
+      background:#f4f4f4;
+      color:#333;
+      line-height:1.6;
+    }
 
-          <div class="project">
-            <p><b>CFU 2</b></p>
-            <img src="CFU2.png" alt="Project 2">
-            <p>During class we were assigned to create a cat using Python, it was pretty challenging at first butb then later on i got the hang of it.</p>
-          </div>
+    /* NAVBAR */
 
-          <div class="project">
-            <p><b>CFU 3</b></p>
+    nav{
+      background:#222;
+      padding:15px;
+      position:sticky;
+      top:0;
+      z-index:1000;
+    }
 
-            <p>Brief description of Project 3.</p>
-          </div>
+    nav ul{
+      display:flex;
+      justify-content:center;
+      list-style:none;
+      gap:30px;
+    }
 
-          <div class="project">
-            <p><b>CFU 4</b></p>
-            <img src="CFU4.png" alt="Project 4">
-            <p>Brief description of Project 4.</p>
-          </div>
+    nav a{
+      color:white;
+      text-decoration:none;
+      font-weight:600;
+      transition:0.3s;
+    }
 
-          <div class="project">
-            <p><b>CFU 5</b></p>
-            <img src="CFU5.png" alt="Project 5">
-            <p>Brief description of Project 5.</p>
-          </div>
+    nav a:hover{
+      color:#ffb6c1;
+    }
 
-          <div class="project">
-            
-            <p><b>CFU 6</b></p>
-            <img src=".png" alt="Project 6">
-            <p>Brief description of Project 6.</p>
-          </div>
-          
-          <div class="project">
-            <p><b>CFU 7</b></p>
-            <img src="CFU7.png" alt="Project 7">
-            <p>Brief description of Project 2.</p>
-          </div>
+    /* HERO SECTION */
 
-          <div class="project">
-            <p><b>CFU 8</b></p>
-            <img src="CFU8.png" alt="Project 8">
-            <p>Brief description of Project 3.</p>
-          </div>
+    .hero{
+      text-align:center;
+      padding:60px 20px;
+      background:linear-gradient(to right, #ffd6e0, #ffeef2);
+    }
 
-          <div class="project">
-            <p><b>CFU 9</b></p>
-            <img src="CFU9.png" alt="Project 9">
-            <p>Brief description of Project 3.</p>
-          </div>
-          
-          <div class="project">
-            <p><b>CFU 10</b></p>
-            <img src="CFU10.png" alt="Project 10">
-            <p>Brief description of Project 3.</p>
-          </div>
-        </div>
-      </section>
-    
-    <!---Resourced used--->
-    <section>
-      <h2>Resources Used:</h2>
-      <ul> <a href="https://www.w3schools.com" target="_blank">W3Schools</a> </ul>
-      <ul> <a href="https://py3.codeskulptor.org/" target="_blank">CodeSkulptor</a> </ul>
-      <ul> <a href="https://share.google/z31dLuZ7nXgAWE7KZ" target="_blank">GitHub</a> </ul>
-      <ul> <a href="https://code.org/en-US" target="_blank">Code.org</a> </ul>
-    </section>
-    
-    <!-- CONTACT -->
-    <section id="contact">
-        <h2>Contact: 🌸</h2>
-        <p>Email: <strong>STephaniev164@nycstudents.net</strong></p>
-      </section>
-    </main>
-    <footer>
-      💫 Made by Stephanie Veliz — Junior Year 💫
-    </footer>
-    <!-- JavaScript -->
-      
-  </body>
+    .hero img{
+      width:180px;
+      margin-top:20px;
+    }
+
+    .hero h1{
+      font-size:2.5rem;
+      margin-bottom:10px;
+    }
+
+    .divider{
+      margin:20px 0;
+      font-weight:bold;
+      color:#555;
+    }
+
+    /* SECTIONS */
+
+    section{
+      padding:60px 20px;
+      max-width:1100px;
+      margin:auto;
+    }
+
+    h2{
+      text-align:center;
+      margin-bottom:25px;
+      color:#222;
+    }
+
+    /* ABOUT */
+
+    .about-content{
+      text-align:center;
+    }
+
+    .selfpic{
+      width:220px;
+      border-radius:15px;
+      margin-top:20px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    /* PROJECTS */
+
+    .project-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+      gap:25px;
+    }
+
+    .project{
+      background:white;
+      padding:20px;
+      border-radius:15px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
+      transition:0.3s;
+      text-align:center;
+    }
+
+    .project:hover{
+      transform:translateY(-8px);
+    }
+
+    .project img{
+      width:100%;
+      border-radius:10px;
+      margin:15px 0;
+    }
+
+    /* RESOURCES */
+
+    .resources ul{
+      list-style:none;
+      text-align:center;
+    }
+
+    .resources li{
+      margin:10px 0;
+    }
+
+    .resources a{
+      color:#ff4f87;
+      text-decoration:none;
+      font-weight:bold;
+    }
+
+    .resources a:hover{
+      text-decoration:underline;
+    }
+
+    /* CONTACT */
+
+    #contact{
+      text-align:center;
+    }
+
+    /* FOOTER */
+
+    footer{
+      background:#222;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:40px;
+    }
+
+    /* MOBILE */
+
+    @media(max-width:768px){
+
+      nav ul{
+        flex-direction:column;
+        gap:10px;
+        text-align:center;
+      }
+
+      .hero h1{
+        font-size:2rem;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#resources">Resources</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+
+  <section class="hero" id="home">
+    <h1>Welcome To My Junior Year Portfolio!</h1>
+
+    <p class="divider">● ○ ● ○ Stephanie Veliz ○ ● ○ ●</p>
+
+    <img src="Tuxcat.png" alt="Portfolio Logo">
+  </section>
+
+  <!-- ABOUT -->
+
+  <section id="about">
+
+    <h2>About Me</h2>
+
+    <div class="about-content">
+
+      <p>
+        Hi! My name is <strong>Stephanie Veliz</strong>, and I’m in 11th grade.
+        I enjoy learning new coding skills and I’m excited to continue learning more about HTML, CSS, and Python.
+      </p>
+
+      <img class="selfpic" src="myself1.png" alt="Photo of Stephanie Veliz">
+
+    </div>
+
+  </section>
+
+  <!-- PROJECTS -->
+
+  <section id="projects">
+
+    <h2>My CFU Projects</h2>
+
+    <div class="project-grid">
+
+      <div class="project">
+        <h3>CFU 1</h3>
+        <img src="CFU1.png" alt="CFU 1">
+        <p>This was the first CFU assignment where we explored how Python works.</p>
+      </div>
+
+      <div class="project">
+        <h3>CFU 2</h3>
+        <img src="CFU2.png" alt="CFU 2">
+        <p>We created a cat using Python. It was challenging at first, but I improved over time.</p>
+      </div>
+
+      <div class="project">
+        <h3>CFU 3</h3>
+        <img src="CFU3.png" alt="CFU 3">
+        <p>This project helped me practice coding and problem-solving skills.</p>
+      </div>
+
+      <div class="project">
+        <h3>CFU 4</h3>
+        <img src="CFU4.png" alt="CFU 4">
+        <p>I learned more advanced coding techniques during this project.</p>
+      </div>
+
+      <div class="project">
+        <h3>CFU 5</h3>
+        <img src="CFU5.png" alt="CFU 5">
+        <p>This project improved my understanding of Python and creativity.</p>
+      </div>
+
+      <div class="project">
+        <h3>CFU 6</h3>
+        <img src="CFU6.png" alt="CFU 6">
+        <p>I continued developing my coding confidence and design skills.</p>
+      </div>
+
+      <div class="project">
+        <h3>CFU 7</h3>
+        <img src="CFU7.png" alt="CFU 7">
+        <p>This project allowed me to experiment with new coding ideas.</p>
+      </div>
+
+      <div class="project">
+        <h3>CFU 8</h3>
+        <img src="CFU8.png" alt="CFU 8">
+        <p>I practiced problem-solving and creativity during this assignment.</p>
+      </div>
+
+      <div class="project">
+        <h3>CFU 9</h3>
+        <img src="CFU9.png" alt="CFU 9">
+        <p>This project strengthened my coding and debugging skills.</p>
+      </div>
+
+      <div class="project">
+        <h3>CFU 10</h3>
+        <img src="CFU10.png" alt="CFU 10">
+        <p>This was one of my favorite projects because I learned so much.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- RESOURCES -->
+
+  <section class="resources" id="resources">
+
+    <h2>Resources Used</h2>
+
+    <ul>
+      <li><a href="https://www.w3schools.com" target="_blank">W3Schools</a></li>
+      <li><a href="https://py3.codeskulptor.org/" target="_blank">CodeSkulptor</a></li>
+      <li><a href="https://github.com/" target="_blank">GitHub</a></li>
+      <li><a href="https://code.org/" target="_blank">Code.org</a></li>
+    </ul>
+
+  </section>
+
+  <!-- CONTACT -->
+
+  <section id="contact">
+
+    <h2>Contact</h2>
+
+    <p>Email: <strong>Stephaniev164@nycstudents.net</strong></p>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+    💫 Made by Stephanie Veliz — Junior Year Portfolio 💫
+  </footer>
+
+</body>
 </html>
